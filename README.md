@@ -1,0 +1,66 @@
+# Tugas Analisis Statistik: Deskriptif, Korelasi, dan Regresi
+
+## 1. Informasi Penyusun
+
+- **Nama:** `[I KOMANG YUSA KATMANDU]`
+- **NIM:** `[2515091096]`
+- **Program Studi:** `[SISTEM INFORMASI]`
+- **Mata Kuliah:** Statistika dan Probabilitas
+
+---
+
+## 2. Deskripsi Proyek
+
+Dataset yang digunakan dalam proyek ini adalah data startup SaaS yang disimpan dalam file data_startup_saas.csv. Dataset ini berisi data numerik yang menggambarkan performa pelanggan, khususnya Nilai_Pelanggan_Juta_IDR dan Biaya_Akuisisi_Pelanggan_Juta_IDR. Variabel Nilai_Pelanggan_Juta_IDR digunakan sebagai variabel utama (variabel A) yang merepresentasikan nilai ekonomi pelanggan bagi perusahaan, sedangkan Biaya_Akuisisi_Pelanggan_Juta_IDR digunakan sebagai variabel pembanding (variabel B) yang menunjukkan biaya yang dikeluarkan untuk memperoleh pelanggan. Tujuan dari analisis ini adalah untuk memahami karakteristik data melalui statistik deskriptif, menguji asumsi normalitas data, menganalisis hubungan antara nilai pelanggan dan biaya akuisisi pelanggan menggunakan analisis korelasi, serta memodelkan hubungan tersebut melalui analisis regresi sederhana.
+
+---
+
+## 3. Struktur Proyek
+
+Proyek ini diorganisir ke dalam beberapa folder:
+- `/data`: Berisi dataset mentah yang digunakan untuk analisis.
+- `/scripts`: Berisi semua skrip R yang digunakan dalam analisis, diurutkan berdasarkan alur kerja.
+- `/results`: Berisi output dari analisis, seperti plot, gambar, atau tabel ringkasan.
+
+---
+
+## 4. Cara Menjalankan Analisis
+
+Untuk mereproduksi hasil analisis ini, ikuti langkah-langkah berikut ya:
+1. Pastikan Anda memiliki R dan RStudio terinstal.
+2. Buka proyek R ini di RStudio.
+3. Instal paket yang diperlukan dengan menjalankan perintah berikut di konsol R:
+   ```R
+   # install.packages(c("tidyverse", "corrplot", "knitr"))
+   ```
+4. Jalankan skrip di dalam folder `/scripts` secara berurutan yang dimulai dari 01_Preparasi_data.R hingga 05_Analisis_Regresi.R
+
+---
+
+## 5. Hasil dan Interpretasi
+
+Di bagian ini, mahasiswa diharapkan untuk menyajikan dan menginterpretasikan hasil dari setiap tahap analisis.
+
+### 5.1. Statistik Deskriptif
+- **Ukuran Pemusatan (Mean, Median, Modus):**
+- Mean (Rata-rata): 100.16
+- Median (Tengah): 98.87
+- Modus (Nilai yang paling sering muncul): 10.11
+Jadi, rata-rata nilai pelanggan sekitar 100, nilai tengahnya 98.87, sedangkan nilai yang paling sering muncul adalah 10.11.
+Mean, median, dan modus adalah tiga ukuran pemusatan data yang sering digunakan dalam statistik untuk memahami karakteristik suatu kumpulan angka. Mean atau rata-rata dihitung dengan menjumlahkan seluruh nilai kemudian membaginya dengan jumlah data memberikan gambaran umum tentang nilai tipikal dalam kumpulan tersebut. Median adalah nilai tengah dari data yang sudah diurutkan jika jumlah data ganjil, median adalah angka di posisi tengah, sedangkan jika genap, median adalah rata-rata dari dua angka di tengah.  Sementara itu, modus adalah nilai yang paling sering muncul dalam kumpulan data sehingga menunjukkan angka yang paling dominan atau populer. 
+
+- **Ukuran Sebaran (Standar Deviasi, Range, Kuartil):**
+Ringkasan
+  Nilai ukuran sebaran dari data Nilai_Pelanggan_Juta_IDR adalah sebagai berikut:
+- Standar Deviasi: 59.81 
+- Range (Jangkauan): 6.01 – 205.46 
+- Kuartil:
+- Kuartil 1 (Q1): 45.91
+- Median (Q2): 98.87
+- Kuartil 3 (Q3): 152.16
+Interpretasi
+- Ukuran sebaran dari data Nilai_Pelanggan_Juta_IDR menunjukkan bahwa distribusi nilai pelanggan cukup bervariasi. Standar deviasi sebesar 59.81 menandakan adanya perbedaan yang tinggi antara nilai pelanggan dengan rata-rata, sehingga data tidak terkonsentrasi pada satu titik dan menyebar luas. Rentang nilai antara 6.01 hingga 205.46 memperlihatkan adanya jarak yang besar antara pelanggan dengan nilai terendah dan tertinggi. Jika dilihat dari ringkasan lima angka, nilai minimum berada di 6.01, kuartil pertama di 45.91, mediannya ada di 98.87, kuartil ketiga ada di 152.16, dan maksimum di 205.46. Hal ini berarti sekitar 25% pelanggan memiliki nilai di bawah 45.91 juta IDR, setengah dari total pelanggan berada di bawah 98.87 juta IDR, dan 75% berada di bawah 152.16 juta IDR. mayoritas pelanggan berada di kisaran 45–150 juta IDR, namun terdapat sebagian kecil pelanggan dengan nilai sangat tinggi yang membuat distribusi data lebih lebar dan sedikit condong ke arah atas. Keseluruhan interpretasi ini menunjukkan bahwa data pelanggan SaaS memiliki tingkat penyebaran yang besar dengan variasi signifikan antar kelompok
+
+- **Visualisasi (Histogram/Boxplot):**
+  - *Sematkan gambar plot dari folder /results...*
+  ![Alt text for the image](results/histogram_Nilai_Pelanggan_Juta_IDR.png)
