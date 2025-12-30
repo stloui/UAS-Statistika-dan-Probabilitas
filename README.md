@@ -62,8 +62,10 @@ Interpretasi
 - Ukuran sebaran dari data Nilai_Pelanggan_Juta_IDR menunjukkan bahwa distribusi nilai pelanggan cukup bervariasi. Standar deviasi sebesar 59.81 menandakan adanya perbedaan yang tinggi antara nilai pelanggan dengan rata-rata, sehingga data tidak terkonsentrasi pada satu titik dan menyebar luas. Rentang nilai antara 6.01 hingga 205.46 memperlihatkan adanya jarak yang besar antara pelanggan dengan nilai terendah dan tertinggi. Jika dilihat dari ringkasan lima angka, nilai minimum berada di 6.01, kuartil pertama di 45.91, mediannya ada di 98.87, kuartil ketiga ada di 152.16, dan maksimum di 205.46. Hal ini berarti sekitar 25% pelanggan memiliki nilai di bawah 45.91 juta IDR, setengah dari total pelanggan berada di bawah 98.87 juta IDR, dan 75% berada di bawah 152.16 juta IDR. mayoritas pelanggan berada di kisaran 45–150 juta IDR, namun terdapat sebagian kecil pelanggan dengan nilai sangat tinggi yang membuat distribusi data lebih lebar dan sedikit condong ke arah atas. Keseluruhan interpretasi ini menunjukkan bahwa data pelanggan SaaS memiliki tingkat penyebaran yang besar dengan variasi signifikan antar kelompok
 
 - **Visualisasi (Histogram/Boxplot):**
-  - *Sematkan gambar plot dari folder /results...*
+  - *Visualisasi Histogram*
   ![Alt text for the image](results/histogram_Nilai_Pelanggan_Juta_IDR.png)
+   - *Visualisasi Boxplot*
+  ![Alt text for the image](results/Boxplot_Nilai_Pelanggan_Juta_IDR.png)
   - Interpretasi
   Histogram Nilai_Pelanggan_Juta_IDR memperlihatkan distribusi nilai pelanggan dalam jutaan rupiah. Sebagian besar data terkonsentrasi pada kisaran menengah, dengan frekuensi yang cukup tinggi di sekitar nilai 50 hingga 150 juta IDR. Garis merah putus-putus yang ditampilkan pada posisi 100.16 menunjukkan nilai rata-rata (mean) dari data. Terlihat bahwa distribusi data cukup menyebar, dengan adanya pelanggan bernilai rendah sekitar 6 juta IDR hingga pelanggan bernilai sangat tinggi mencapai lebih dari 200 juta IDR. Posisi mean yang sedikit lebih tinggi dibanding median (98.87) menandakan adanya beberapa nilai ekstrem di sisi atas yang menarik rata-rata ke arah kanan, sehingga distribusi cenderung condong ke kanan. histogram ini menggambarkan bahwa mayoritas pelanggan SaaS berada di kisaran menengah dan terdapat sebagian kecil pelanggan dengan nilai sangat tinggi yang memperlebar sebaran data.
   
