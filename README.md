@@ -105,6 +105,8 @@ Interpretasi
 - **Visualisasi (Garis Regresi pada Scatter Plot):**
   - ![Alt text for the image](results/plot_regresi_Biaya_Akuisisi_Pelanggan_Juta_IDR_vs_Nilai_Pelanggan_Juta_IDR.png)
   - *Interpretasi:* Jelaskan bagaimana garis regresi merepresentasikan hubungan antara variabel.
+  - Garis regresi merah pada scatter plot merepresentasikan hubungan linear antara Biaya Akuisisi Pelanggan dan Nilai Pelanggan. Titik-titik biru menunjukkan data aktual sementara garis regresi berfungsi sebagai garis prediksi yang menggambarkan tren umum dari hubungan kedua variabel. Karena garis regresi mengikuti pola titik-titik dengan sangat rapat menegaskan bahwa terdapat hubungan positif yang sangat kuat. semakin tinggi biaya akuisisi pelanggan, semakin tinggi pula nilai pelanggan yang dihasilkan. Garis tersebut sekaligus mevisualisasikan persamaan regresi yang telah dihitung, sehingga memudahkan interpretasi arah dan kekuatan pengaruh variabel independen terhadap variabel dependen.
+
 
 
 
