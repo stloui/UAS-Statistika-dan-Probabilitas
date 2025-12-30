@@ -31,7 +31,7 @@ Untuk mereproduksi hasil analisis ini, ikuti langkah-langkah berikut ya:
 2. Buka proyek R ini di RStudio.
 3. Instal paket yang diperlukan dengan menjalankan perintah berikut di konsol R:
    ```R
-   # install.packages("tidyverse") dan library(tidyverse)
+   # install.packages("tidyverse"), library(tidyverse), dan juga library(ggplot2)
    ```
 4. Jalankan skrip di dalam folder `/scripts` secara berurutan yang dimulai dari 01_Preparasi_data.R hingga 05_Analisis_Regresi.R
 
@@ -67,6 +67,8 @@ Interpretasi
   ![Alt text for the image](results/boxplot_Nilai_Pelanggan_Juta_IDR.png)
   - Interpretasi
   - Histogram Nilai_Pelanggan_Juta_IDR memperlihatkan distribusi nilai pelanggan dalam jutaan rupiah. Sebagian besar data terkonsentrasi pada kisaran menengah, dengan frekuensi yang cukup tinggi di sekitar nilai 50 hingga 150 juta IDR. Garis merah putus-putus yang ditampilkan pada posisi 100.16 menunjukkan nilai rata-rata (mean) dari data. Terlihat bahwa distribusi data cukup menyebar, dengan adanya pelanggan bernilai rendah sekitar 6 juta IDR hingga pelanggan bernilai sangat tinggi mencapai lebih dari 200 juta IDR. Posisi mean yang sedikit lebih tinggi dibanding median (98.87) menandakan adanya beberapa nilai ekstrem di sisi atas yang menarik rata-rata ke arah kanan, sehingga distribusi cenderung condong ke kanan. histogram ini menggambarkan bahwa mayoritas pelanggan SaaS berada di kisaran menengah dan terdapat sebagian kecil pelanggan dengan nilai sangat tinggi yang memperlebar sebaran data.
+  - Boxplot Nilai_Pelanggan_Juta_IDR menunjukkan bahwa sebagian besar data pelanggan berada pada rentang kuartil bawah sekitar 45 juta hingga kuartil atas sekitar 155 juta, dengan median di sekitar 100 juta. Whiskers yang memanjang dari sekitar 10 juta hingga 210 juta menandakan adanya sebaran data yang cukup lebar, sementara beberapa nilai ekstrem di luar rentang tersebut menunjukkan adanya pelanggan dengan nilai yang jauh lebih tinggi dibandingkan mayoritas. Hal ini mengindikasikan distribusi yang tidak merata di mana sebagian besar pelanggan bernilai rendah hingga menengah namun terdapat kelompok kecil pelanggan bernilai tinggi yang memperlebar distribusi dan memengaruhi rata-rata.
+
   
   ### 5.2. Uji Normalitas
 - **Hasil Uji Shapiro-Wilk:**
