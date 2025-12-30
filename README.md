@@ -54,7 +54,6 @@ Ringkasan
   Nilai ukuran sebaran dari data Nilai_Pelanggan_Juta_IDR adalah sebagai berikut:
 - Standar Deviasi: 59.81 
 - Range (Jangkauan): 6.01 – 205.46 
-- Kuartil:
 - Kuartil 1 (Q1): 45.91
 - Median (Q2): 98.87
 - Kuartil 3 (Q3): 152.16
@@ -65,19 +64,20 @@ Interpretasi
   - *Visualisasi Histogram*
   ![Alt text for the image](results/histogram_Nilai_Pelanggan_Juta_IDR.png)
    - *Visualisasi Boxplot*
-  ![Alt text for the image](results/Boxplot_Nilai_Pelanggan_Juta_IDR.png)
+  ![Alt text for the image](results/boxplot_Nilai_Pelanggan_Juta_IDR.png)
   - Interpretasi
-  Histogram Nilai_Pelanggan_Juta_IDR memperlihatkan distribusi nilai pelanggan dalam jutaan rupiah. Sebagian besar data terkonsentrasi pada kisaran menengah, dengan frekuensi yang cukup tinggi di sekitar nilai 50 hingga 150 juta IDR. Garis merah putus-putus yang ditampilkan pada posisi 100.16 menunjukkan nilai rata-rata (mean) dari data. Terlihat bahwa distribusi data cukup menyebar, dengan adanya pelanggan bernilai rendah sekitar 6 juta IDR hingga pelanggan bernilai sangat tinggi mencapai lebih dari 200 juta IDR. Posisi mean yang sedikit lebih tinggi dibanding median (98.87) menandakan adanya beberapa nilai ekstrem di sisi atas yang menarik rata-rata ke arah kanan, sehingga distribusi cenderung condong ke kanan. histogram ini menggambarkan bahwa mayoritas pelanggan SaaS berada di kisaran menengah dan terdapat sebagian kecil pelanggan dengan nilai sangat tinggi yang memperlebar sebaran data.
+  - Histogram Nilai_Pelanggan_Juta_IDR memperlihatkan distribusi nilai pelanggan dalam jutaan rupiah. Sebagian besar data terkonsentrasi pada kisaran menengah, dengan frekuensi yang cukup tinggi di sekitar nilai 50 hingga 150 juta IDR. Garis merah putus-putus yang ditampilkan pada posisi 100.16 menunjukkan nilai rata-rata (mean) dari data. Terlihat bahwa distribusi data cukup menyebar, dengan adanya pelanggan bernilai rendah sekitar 6 juta IDR hingga pelanggan bernilai sangat tinggi mencapai lebih dari 200 juta IDR. Posisi mean yang sedikit lebih tinggi dibanding median (98.87) menandakan adanya beberapa nilai ekstrem di sisi atas yang menarik rata-rata ke arah kanan, sehingga distribusi cenderung condong ke kanan. histogram ini menggambarkan bahwa mayoritas pelanggan SaaS berada di kisaran menengah dan terdapat sebagian kecil pelanggan dengan nilai sangat tinggi yang memperlebar sebaran data.
   
   ### 5.2. Uji Normalitas
 - **Hasil Uji Shapiro-Wilk:**
-  - *Nilai p-value...*
-  *p-value* = 7.607e-13
+  - *p-value* = 7.607e-13
   - *Interpretasi:* Apakah data Anda terdistribusi normal berdasarkan hasil uji? Apa implikasinya?
-  Hasil uji normalitas Shapiro-Wilk menunjukkan nilai p-value sebesar 7.607e-13 yang jauh lebih kecil dari batas signifikansi 0,05, sehingga dapat disimpulkan bahwa data tidak terdistribusi normal. Implikasinya, analisis statistik yang mengasumsikan distribusi normal seperti uji t atau ANOVA tidak tepat digunakan, dan sebaiknya diganti dengan metode non-parametrik yang lebih sesuai. Selain itu, penyimpangan dari normalitas ini mengindikasikan adanya pola distribusi yang miring atau outlier dalam data, misalnya sebagian kecil pelanggan dengan nilai transaksi sangat tinggi yang memengaruhi bentuk distribusi keseluruhan.
+  - Hasil uji normalitas Shapiro-Wilk menunjukkan nilai p-value sebesar 7.607e-13 yang jauh lebih kecil dari batas signifikansi 0,05, sehingga dapat disimpulkan bahwa data tidak terdistribusi normal. Implikasinya, analisis statistik yang mengasumsikan distribusi normal seperti uji t atau ANOVA tidak tepat digunakan, dan sebaiknya diganti dengan metode non-parametrik yang lebih sesuai. Selain itu, penyimpangan dari normalitas ini mengindikasikan adanya pola distribusi yang miring atau outlier dalam data, misalnya sebagian kecil pelanggan dengan nilai transaksi sangat tinggi yang memengaruhi bentuk distribusi keseluruhan.
   
 - **Plot Q-Q:**
   - ![Alt text for the image](results/qqplot_Nilai_Pelanggan_Juta_IDR.png)
   - *Interpretasi:* Apakah titik-titik data mengikuti garis lurus? Apa artinya?
+  - Pada Q-Q plot, titik-titik data tidak mengikuti garis lurus merah secara konsisten, melainkan terlihat menyimpang dari garis referensi. Artinya, distribusi data berbeda dari distribusi normal yang seharusnya ditunjukkan oleh titik-titik yang sejajar dengan garis lurus. Penyimpangan ini menegaskan hasil uji Shapiro-Wilk bahwa data tidak terdistribusi normal, sehingga asumsi normalitas tidak terpenuhi dan analisis parametrik yang bergantung pada distribusi normal sebaiknya diganti dengan metode non-parametrik.
+
 
 
