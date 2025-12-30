@@ -89,6 +89,23 @@ Interpretasi
   - *Interpretasi:* Apakah pola pada scatter plot mendukung hasil koefisien korelasi?
   - pola pada scatter plot mendukung hasil koefisien korelasi Spearman sebesar 0.999627. Titik-titik data terlihat membentuk pola yang rapat mengikuti garis tren merah hal itu menunjukkan hubungan yang hampir linier sempurna antara Nilai_Pelanggan_Juta_IDR dan Biaya_Akuisisi_Pelanggan_Juta_IDR. Hal ini konsisten dengan interpretasi bahwa kedua variabel memiliki korelasi sangat kuat dan positif, sehingga semakin tinggi nilai pelanggan, semakin tinggi pula biaya akuisisi pelanggan.
 
+### 5.4. Analisis Regresi
+- **Model Regresi:**
+  - *Persamaan regresi: Y = b0 + b1*X*
+- Intercept (b0) = -0.37 
+- Slope (b1) = 2.99 
+   - persamaan regresi adalah: 
+   - Nilai_Pelanggan_Juta_IDR = -0.37 + 2.99 * Biaya_Akuisisi_Pelanggan_Juta_IDR
+
+
+
+  - *Interpretasi:* Jelaskan arti dari koefisien intercept (b0) dan slope (b1) dalam konteks data Anda.
+- **Evaluasi Model (R-squared):**
+  - *Nilai R-squared...*
+  - *Interpretasi:* Berapa persen variasi dari variabel dependen yang dapat dijelaskan oleh model regresi Anda?
+- **Visualisasi (Garis Regresi pada Scatter Plot):**
+  - *Sematkan gambar plot dari folder /results...*
+  - *Interpretasi:* Jelaskan bagaimana garis regresi merepresentasikan hubungan antara variabel.
 
 
 
