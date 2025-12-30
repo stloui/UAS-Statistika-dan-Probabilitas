@@ -79,5 +79,16 @@ Interpretasi
   - *Interpretasi:* Apakah titik-titik data mengikuti garis lurus? Apa artinya?
   - Pada Q-Q plot, titik-titik data tidak mengikuti garis lurus merah secara konsisten, melainkan terlihat menyimpang dari garis referensi. Artinya, distribusi data berbeda dari distribusi normal yang seharusnya ditunjukkan oleh titik-titik yang sejajar dengan garis lurus. Penyimpangan ini menegaskan hasil uji Shapiro-Wilk bahwa data tidak terdistribusi normal, sehingga asumsi normalitas tidak terpenuhi dan analisis parametrik yang bergantung pada distribusi normal sebaiknya diganti dengan metode non-parametrik.
 
+  ### 5.3. Analisis Korelasi
+- **Nilai Koefisien Korelasi:**
+  - *Nilai r* = 0.999627.
+  - *Interpretasi:* Seberapa kuat dan apa arah hubungan antara dua variabel yang Anda uji? (misalnya, korelasi positif kuat, negatif lemah, atau tidak ada korelasi).
+  - Hasil uji korelasi Spearman menunjukkan nilai koefisien korelasi (ρ) sebesar 0.999627, yang berarti hubungan antara variabel Nilai_Pelanggan_Juta_IDR dan Biaya_Akuisisi_Pelanggan_Juta_IDR adalah sangat kuat dan berarah positif. Dengan kata lain, ketika nilai pelanggan meningkat, biaya akuisisi pelanggan juga cenderung meningkat secara hampir linier sempurna.
+- **Visualisasi (Scatter Plot):**
+  - ![Alt text for the image](results/scatterplot_Nilai_Pelanggan_Juta_IDR_vs_Biaya_Akuisisi_Pelanggan_Juta_IDR.png)
+  - *Interpretasi:* Apakah pola pada scatter plot mendukung hasil koefisien korelasi?
+  - pola pada scatter plot mendukung hasil koefisien korelasi Spearman sebesar 0.999627. Titik-titik data terlihat membentuk pola yang rapat mengikuti garis tren merah hal itu menunjukkan hubungan yang hampir linier sempurna antara Nilai_Pelanggan_Juta_IDR dan Biaya_Akuisisi_Pelanggan_Juta_IDR. Hal ini konsisten dengan interpretasi bahwa kedua variabel memiliki korelasi sangat kuat dan positif, sehingga semakin tinggi nilai pelanggan, semakin tinggi pula biaya akuisisi pelanggan.
+
+
 
 
