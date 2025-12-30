@@ -75,7 +75,7 @@ Interpretasi
   Hasil uji normalitas Shapiro-Wilk menunjukkan nilai p-value sebesar 7.607e-13 yang jauh lebih kecil dari batas signifikansi 0,05, sehingga dapat disimpulkan bahwa data tidak terdistribusi normal. Implikasinya, analisis statistik yang mengasumsikan distribusi normal seperti uji t atau ANOVA tidak tepat digunakan, dan sebaiknya diganti dengan metode non-parametrik yang lebih sesuai. Selain itu, penyimpangan dari normalitas ini mengindikasikan adanya pola distribusi yang miring atau outlier dalam data, misalnya sebagian kecil pelanggan dengan nilai transaksi sangat tinggi yang memengaruhi bentuk distribusi keseluruhan.
   
 - **Plot Q-Q:**
-  - ![Alt text for the image](results/histogram_Nilai_Pelanggan_Juta_IDR.png)
+  - ![Alt text for the image](results/qqplot_Nilai_Pelanggan_Juta_IDR.png)
   - *Interpretasi:* Apakah titik-titik data mengikuti garis lurus? Apa artinya?
 
 
