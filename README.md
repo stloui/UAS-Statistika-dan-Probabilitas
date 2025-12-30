@@ -96,15 +96,14 @@ Interpretasi
 - Slope (b1) = 2.99 
    - persamaan regresi adalah: 
    - Nilai_Pelanggan_Juta_IDR = -0.37 + 2.99 * Biaya_Akuisisi_Pelanggan_Juta_IDR
-
-
-
-  - *Interpretasi:* Jelaskan arti dari koefisien intercept (b0) dan slope (b1) dalam konteks data Anda.
+ - *Interpretasi:* Jelaskan arti dari koefisien intercept (b0) dan slope (b1) dalam konteks data Anda.
+ - Koefisien intercept b0 = -0.37 menunjukkan nilai prediksi Nilai_Pelanggan_Juta_IDR ketika Biaya_Akuisisi_Pelanggan_Juta_IDR bernilai nol. intercept sendiri berfungsi sebagai titik awal garis regresi pada sumbu Y. Keberadaan intercept tetap penting untuk membentuk persamaan regresi yang merepresentasikan hubungan antara kedua variabel. Sementara itu koefisien slope b1 = 2.99. Nilai ini menunjukkan bahwa setiap kenaikan 1 unit pada Biaya_Akuisisi_Pelanggan_Juta_IDR diprediksi akan meningkatkan Nilai_Pelanggan_Juta_IDR sebesar 2.99 unit. Dengan begitu terdapat hubungan positif yang sangat kuat antara biaya akuisisi dan nilai pelanggan, sehingga semakin besar investasi dalam akuisisi pelanggan, semakin tinggi pula nilai pelanggan yang dihasilkan.
 - **Evaluasi Model (R-squared):**
-  - *Nilai R-squared...*
+  - *Nilai R-squared = 0.9995*
   - *Interpretasi:* Berapa persen variasi dari variabel dependen yang dapat dijelaskan oleh model regresi Anda?
+  - Artinya sebesar 99,95% variasi pada variabel dependen Nilai_Pelanggan_Juta_IDR dapat dijelaskan oleh variabel independen Biaya_Akuisisi_Pelanggan_Juta_ID melalui model regresi linear yang digunakan. Dengan kata lain, model ini memiliki kemampuan yang sangat tinggi dalam menjelaskan hubungan antara kedua variabel sehingga prediksi yang dihasilkan sangat akurat dan konsisten dengan data yang ada.
 - **Visualisasi (Garis Regresi pada Scatter Plot):**
-  - *Sematkan gambar plot dari folder /results...*
+  - ![Alt text for the image](results/plot_regresi_Biaya_Akuisisi_Pelanggan_Juta_IDR_vs_Nilai_Pelanggan_Juta_IDR.png)
   - *Interpretasi:* Jelaskan bagaimana garis regresi merepresentasikan hubungan antara variabel.
 
 
